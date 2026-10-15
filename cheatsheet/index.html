@@ -8,7 +8,78 @@
     <title>HTML5 Cheatsheet</title>
 </head>
 <body>
-    <h1>HTML5 Cheatsheet</h1>
+    <header class="primary">
+        <h1>HTML5 Cheatsheet</h1>
+    </header>
     
+    <section id="headings">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    </section>
+    
+    <section id="text-elements">
+        <h2>Text Elements</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section id="lists">
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Bullet Points</li>
+            <li>"ul" tag is unordered list</li>
+            <li>"ol" tag is ordered list</li>
+            
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Numbered List</li>
+            <li>"ul" tag is unordered list</li>
+            <li>"ol" tag is ordered list</li>
+        </ol>
+        <p>By the way</p>
+        <ol start="5">
+            <li>Use "start=" attribute to change list count start</li>
+        </ol>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>"DT" (Definition Term)</dt>
+                <dd>The tag used for a DL (Definition List) list item</dd>
+                <dd>"dd" is the tag for a list description/definition</dd>
+            <dt>Definition List quirks</dt>
+                <dd>Doesn't have a list character, such as a bullet or number</dd>
+                <dd>Otherwise similar to nesting other kinds of lists</dd>
+        </dl>
+    </section>
+
+    <section id="hyperlinks">
+        <h2>Hyperlinks</h2>
+        <ul>
+            <li><a href="https://miniature-garbanzo-p6ppjwqxjrx3r4p6.github.dev/" target="_blank">Absolute Link (a href="https://")</a></li>
+                <ol>
+                    <li>Needs "href='(link)'" attribute"</li>
+                    <li>"target= '_blank'" attribute opens link in new tab automatically</li>
+                </ol>
+            <li><a href="index.html">Relative Link</a></li>
+                <ol>
+                    <li>Links to relative location</li>
+                    <li>"../" can navigate to higher-tier folders</li>
+                </ol>
+            <li><a href="#headings">Anchor Link</a></li>
+                <ol>
+                    <li>Navigates to elements with ID (use href="#ID")</li>
+                    <li>Use "#top" to navigate to top</li>
+                </ol>
+            <li><a href="mailto:email@email.com">Email Link</a></li>
+            <ol>
+                <li>Navigates to local email</li>
+                <li>Rarely used</li>
+            </ol>
+        </ul>
+    </section>
+    
+    <footer class="primary">
+        Footer
+    </footer>
 </body>
 </html>
