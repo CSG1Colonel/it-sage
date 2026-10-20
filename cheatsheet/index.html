@@ -38,7 +38,7 @@
             <li>"ol" tag is ordered list</li>
         </ol>
         <p>By the way</p>
-        <ol start="5">
+        <ol start="4">
             <li>Use "start=" attribute to change list count start</li>
         </ol>
         <h3>Definition List</h3>
@@ -78,6 +78,31 @@
         </ul>
     </section>
     
+    <section id="table">
+        <h2>Table</h2>
+        <table border="1">
+            <tr><th scope="col">"table" Tag</th><th scope="col">"tr" Tag</th><th>"th" Tag</th><th scope="col">"td" Tag</th></tr>
+            <tr><td>Creates Table</td><td>Creates New Row</td><td>Table Header Cells</td><td>Table Data cells</td></tr>
+            Use "border="1"" to outline cells without CSS;
+            use "scope=""" attribute in TH cells to improve accessibility
+        </table>
+    </section>
+
+    <section id="forms">
+        <h2>Forms</h2>
+        <p>"form" tags require "action" (i.e. processing-script.php) and "method" (get/post) attributes</p>
+        <p>"legend" and "input" tags are nexted inside "fieldset" tag, nested inside "form" tag</p>
+        <p>"legend" labels form box</p>
+        <p> "input" is self-closing; enables input (use type="text", type="password", type="date", or similar attribute)</p>
+        <form action="processing-script.php" method="get">
+            <fieldset>
+                <legend>"legend" tag labels form box</legend>
+                <input type="text"/>
+                <input type="date" />
+                <input type="radio" />
+            </fieldset>
+        </form>
+    </section>
     <footer class="primary">
         Footer
     </footer>
