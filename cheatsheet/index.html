@@ -6,6 +6,9 @@
     <meta name="description" content="Cheatsheet for HTML5"/>
     <meta name="author" content="Aden Gabe"/>
     <title>HTML5 Cheatsheet</title>
+    <style>
+        input, label, textarea{display:block}
+    </style>
 </head>
 <body>
     <header class="primary">
@@ -90,16 +93,21 @@
 
     <section id="forms">
         <h2>Forms</h2>
-        <p>"form" tags require "action" (i.e. processing-script.php) and "method" (get/post) attributes</p>
-        <p>"legend" and "input" tags are nexted inside "fieldset" tag, nested inside "form" tag</p>
-        <p>"legend" labels form box</p>
-        <p> "input" is self-closing; enables input (use type="text", type="password", type="date", or similar attribute)</p>
+        <p>- "form" tags require "action" (i.e. processing-script.php) and "method" (get/post) attributes</p>
+        <p>- "legend" and "input" tags are nexted inside "fieldset" tag, nested inside "form" tag</p>
+        <p>- "legend" labels form box</p>
+        <p>- "input" is self-closing; enables input (use type="text", type="password", type="date", or similar attribute)</p>
+        <p>- ALL input elements should have type, ID, and name attributes</p>
+        <p>- Use "for" attribute with labels to tie to inputs</p>
+        <p>- "textarea" is not a self-closing input</p>
         <form action="processing-script.php" method="get">
             <fieldset>
                 <legend>"legend" tag labels form box</legend>
-                <input type="text"/>
+                <label for="fullname">"label" tag adds label </label><input type="text" id="fullname" name="fullname"/>
                 <input type="date" />
                 <input type="radio" />
+                <label for="address">textarea box</label>
+                <textarea id="address" name="address"></textarea>
             </fieldset>
         </form>
     </section>
