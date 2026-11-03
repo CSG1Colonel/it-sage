@@ -1,0 +1,24 @@
+ body {
+       background-color:#0A330C;
+      font-family: "Roboto", sans-serif;
+      }
+   
+h1 {
+   color: #CCFFCE;
+}
+
+h2 {
+   color: #CCFFCE;
+}
+
+a {
+   background-color: #006603;
+   color: #CCFFCE;
+   }      
+ /*
+ .fun-color-1 { color: #006603; }
+ .fun-color-2 { color: #0A330C; }
+ .fun-color-3 { color: #52CC56; }
+ .fun-color-4 { color: #99FF9C; }
+ .fun-color-5 { color: #CCFFCE; }
+ */
