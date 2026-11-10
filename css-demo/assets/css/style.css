@@ -11,10 +11,36 @@ box-sizing: inherit;
 /* ---------------Global Styles----------------- */
 body {
     font-family: "Rubik", sans-serif;
-    background-color: rgb(255, 221, 177);
+    background-color: rgb(13, 0, 19);
 }
 
 main {
-    background-color:antiquewhite;
-    width:80vp;
+    background-color:rgb(227, 217, 228);
+    width:80vw;
+    margin:40px auto;
+    border: 2px solid rgb(78, 0, 23);
+    border-radius:4px;
+}
+
+header.primary{
+    background:rgb(29, 1, 15);
+    background-image: url("https://assets.codepen.io/7248/bg_1.png");
+    background-size:cover;
+    padding:20px
+}
+
+header.primary h1{
+    margin:0;
+}
+
+header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+    text-shadow:1px 1px #05000f;
+}
+
+header.primary h2{
+    color:#ffffff;
+    text-shadow:1px 1px #05000f;
+    margin:0;
 }
